@@ -12,28 +12,28 @@ AFRAME.registerComponent("info-banner", {
         title: "Superman",
         released_year: "1983",
         description:
-          "Superman is an ongoing American comic book series featuring the DC Comics superhero Superman as its main protagonist. Superman began as one of several anthology features in the National Periodical Publications comic book Action Comics in June 1938. The strip proved so popular that National launched Superman into his own self-titled comic book, the first for any superhero, premiering with the cover date Summer 1939.",
+          "Superman es una serie de historietas estadounidense que tiene como protagonista al superhéroe de DC Comics, Superman. Superman comenzó como uno de los varios personajes de la antología 'Historietas de acción' de National Periodical Publications en junio de 1938. La tira resultó ser tan popular que National lanzó a Superman con su propio cómic autotitulado, el primero para cualquier superhéroe, estrenándose con la fecha de portada del verano de 1939.",
       },
       spiderman: {
         banner_url: "./assets/posters/spiderman-banner.png",
-        title: "Spiderman",
+        title: "Hombre-Araña",
         released_year: "1962",
         description:
-          "Spider-Man is a fictional superhero created by writer-editor Stan Lee and writer-artist Steve Ditko. He first appeared in the anthology comic book Amazing Fantasy (Aug. 1962) in the Silver Age of Comic Books.",
+          "El Hombre Araña es un superhéroe ficticio creado por el escritor y editor Stan Lee y el escritor y artista Steve Ditko. Apareció por primera vez en el cómic de antología Amazing Fantasy (agosto de 1962) en la Edad de Plata de las historietas.",
       },
       "captain-aero": {
         banner_url: "./assets/posters/captain-aero-banner.jpg",
-        title: "Captain Aero",
+        title: "Capitn Aero",
         released_year: "1942",
         description:
-          "Captain Aero Comics is a comic book from the Golden Age of Comics, originally published by Helnit Publishing and acquired by Holyoke Publishing in 1942. Issue was published in December 1941, and it ran through issue (August 1946).",
+          "Capitán Aero es una historieta de la Edad de Oro del Cómic, publicado originalmente por Helnit Publishing y adquirido por Holyoke Publishing en 1942. El número se publicó en diciembre de 1941, y se mantuvo hasta el agosto de 1946.",
       },
       "outer-space": {
         banner_url: "./assets/posters/outer-space-banner.jpg",
         title: "Outer Space",
         released_year: "1952",
         description:
-          "This is the most vital subject of our times! Every American Man... and Woman... Child... owes it to his country and himself, to read this issue!!",
+          "¡Este es el tema más vital de nuestros tiempos! ¡¡Todo hombre... mujer... y niño... le debe a su país y a sí mismo, leer esta historieta!!",
       },
     };
     const { itemId } = this.data;

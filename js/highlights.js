@@ -9,8 +9,8 @@ AFRAME.registerComponent("cursor-listener", {
   update: function () {
     const fadeBackgroundEl = document.querySelector("#fadeBackground");
 
-    //check if the infoBanner plane already has comic text info child entity
-    //if so remove the child to avoid the overlapping of the text
+    // Verificar si el plano infoBanner ya tiene la entidad hija del texto con la información de la historieta.
+    // de ser así, eliminar la hija para evitar el sobrelapamiento del texto.
     c = fadeBackgroundEl.children;
     if (c.length > 0) {
       var i;
@@ -22,7 +22,7 @@ AFRAME.registerComponent("cursor-listener", {
     }
   },
   handleMouseEnterEvents: function () {
-    // Mouse Enter Events
+    // Evento 'mouseenter' del cursor.
     this.el.addEventListener("mouseenter", () => {
       const id = this.el.getAttribute("id");
       const postersId = [
@@ -41,7 +41,7 @@ AFRAME.registerComponent("cursor-listener", {
     });
   },
   handleMouseLeaveEvents: function () {
-    // Mouse Leave Events
+    // Evento 'mouseleave' del cursor.
     this.el.addEventListener("mouseleave", () => {
       const { selectedItemId } = this.data;
       if (selectedItemId) {
@@ -54,7 +54,7 @@ AFRAME.registerComponent("cursor-listener", {
     });
   },
   handleMouseClickEvents: function () {
-    // Mouse Click Events
+    // Evento clic del cursor.
     this.el.addEventListener("click", () => {
       const { selectedItemId } = this.data;
 
@@ -62,7 +62,7 @@ AFRAME.registerComponent("cursor-listener", {
       const titleEl = document.querySelector("#app-title");
       const cursorEl = document.querySelector("#camera-cursor");
 
-      //check the selected item to set the "info-banner" component on the plane
+      // Verificar el elemento seleccionado para establecer el componente "info-banner" en el plano.
       if (selectedItemId) {
         fadeBackgroundEl.setAttribute("visible", true);
         fadeBackgroundEl.setAttribute("info-banner", {
@@ -75,7 +75,7 @@ AFRAME.registerComponent("cursor-listener", {
           radiusOuter: 0.04,
         });
       } else {
-        //else make the plane invisible
+        // sino, hacer el plano invisible.
         fadeBackgroundEl.setAttribute("visible", false);
         titleEl.setAttribute("visible", true);
         cursorEl.setAttribute("position", { x: 0, y: 0, z: -3 });
