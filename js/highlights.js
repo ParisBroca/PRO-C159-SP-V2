@@ -9,7 +9,7 @@ AFRAME.registerComponent("cursor-listener", {
   update: function () {
     const fadeBackgroundEl = document.querySelector("#fadeBackground");
 
-    // Verificar si el plano infoBanner ya tiene la entidad hija del texto con la información de la historieta.
+    // Verificar si el plano infoBanner ya tiene la entidad hija del texto con la información de la historieta,
     // de ser así, eliminar la hija para evitar el sobrelapamiento del texto.
     c = fadeBackgroundEl.children;
     if (c.length > 0) {
@@ -75,7 +75,7 @@ AFRAME.registerComponent("cursor-listener", {
           radiusOuter: 0.04,
         });
       } else {
-        // sino, hacer el plano invisible.
+        // Sino, hacer el plano invisible.
         fadeBackgroundEl.setAttribute("visible", false);
         titleEl.setAttribute("visible", true);
         cursorEl.setAttribute("position", { x: 0, y: 0, z: -3 });
